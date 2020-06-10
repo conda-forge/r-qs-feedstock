@@ -1,4 +1,4 @@
-{% set version = "0.21.2" %}
+{% set version = "0.22.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/qs_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qs/qs_{{ version }}.tar.gz
-  sha256: 63297f513a1ebe832c0292c622b854468eca267f1507be2aa1cea1bf53cd9dc4
+  sha256: 3d1746fd2ffbe2f2678e205a2cde8ce49a8504c72084c0d964512d23994c6228
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -39,12 +39,14 @@ requirements:
     - r-base
     - r-rapiserialize
     - r-rcpp
+    - r-stringfish
     - zstd
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-rapiserialize
     - r-rcpp
+    - r-stringfish
     - zstd
 
 test:
@@ -54,7 +56,7 @@ test:
 
 about:
   home: https://github.com/traversc/qs
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Provides functions for quickly writing and reading any R object to and from disk.
   license_family: GPL3
   license_file:
