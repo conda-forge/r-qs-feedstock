@@ -39,12 +39,14 @@ requirements:
     - r-base
     - r-rapiserialize
     - r-rcpp
+    - r-stringfish
     - zstd
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-rapiserialize
     - r-rcpp
+    - r-stringfish
     - zstd
 
 test:
@@ -54,7 +56,7 @@ test:
 
 about:
   home: https://github.com/traversc/qs
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Provides functions for quickly writing and reading any R object to and from disk.
   license_family: GPL3
   license_file:
