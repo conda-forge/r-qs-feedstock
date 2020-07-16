@@ -5,7 +5,7 @@ Home: https://github.com/traversc/qs
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Provides functions for quickly writing and reading any R object to and from disk.
 
