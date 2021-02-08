@@ -1,4 +1,4 @@
-{% set version = "0.23.5" %}
+{% set version = "0.23.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/qs_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qs/qs_{{ version }}.tar.gz
-  sha256: dbda57b39cfb1af9aae716bd38c4cc6a172ad1ebfe702f4f9ffcb5c43f724293
+  sha256: c6e958e9741ee981bf2388c91b8f181718ffb0f32283cd7ebcd2d054817280e4
 
 build:
   merge_build_host: true  # [win]
