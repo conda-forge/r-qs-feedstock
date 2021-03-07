@@ -39,14 +39,14 @@ requirements:
     - r-base
     - r-rapiserialize
     - r-rcpp
-    - r-stringfish
+    - r-stringfish >=0.15.0
     - zstd
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-rapiserialize
     - r-rcpp
-    - r-stringfish
+    - r-stringfish >=0.15.0
     - zstd
 
 test:
