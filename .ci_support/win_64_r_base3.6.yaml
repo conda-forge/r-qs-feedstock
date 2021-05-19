@@ -17,4 +17,4 @@ r_base:
 target_platform:
 - win-64
 zstd:
-- '1.4'
+- '1.5'
