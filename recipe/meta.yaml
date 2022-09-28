@@ -42,7 +42,7 @@ requirements:
     - r-rcpp
     - r-stringfish >=0.15.0
     - zstd
-    - lz4
+    - lz4-c
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
@@ -50,7 +50,7 @@ requirements:
     - r-rcpp
     - r-stringfish >=0.15.0
     - zstd
-    - lz4
+    - lz4-c
 
 test:
   commands:
