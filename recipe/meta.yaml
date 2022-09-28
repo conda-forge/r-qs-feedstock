@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   skip: true  # [osx]
   rpaths:
     - lib/R/lib/
@@ -42,6 +42,7 @@ requirements:
     - r-rcpp
     - r-stringfish >=0.15.0
     - zstd
+    - lz4-c
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
@@ -49,6 +50,7 @@ requirements:
     - r-rcpp
     - r-stringfish >=0.15.0
     - zstd
+    - lz4-c
 
 test:
   commands:
