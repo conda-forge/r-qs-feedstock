@@ -5,7 +5,7 @@ channel_targets:
 cran_mirror:
 - https://cran.r-project.org
 lz4_c:
-- 1.9.3
+- '1.10'
 m2w64_c_compiler:
 - gcc
 m2w64_c_compiler_version:
