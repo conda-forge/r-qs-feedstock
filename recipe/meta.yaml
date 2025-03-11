@@ -1,4 +1,4 @@
-{% set version = "0.26.3" %}
+{% set version = "0.27.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/qs_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qs/qs_{{ version }}.tar.gz
-  sha256: 8801a41f6e5161a55193dc9a75fcee8da1b0e02eebd7653ec05326d594321ee3
+  sha256: 6e0b375d0a24828c542a9be8b2b3eacc5626fe3acdeaa09c6ebd5ba1dfd34468
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
