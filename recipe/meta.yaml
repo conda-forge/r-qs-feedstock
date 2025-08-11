@@ -12,10 +12,14 @@ source:
   sha256: 6e0b375d0a24828c542a9be8b2b3eacc5626fe3acdeaa09c6ebd5ba1dfd34468
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -38,14 +42,14 @@ requirements:
   host:
     - r-base
     - r-bh
-    - r-rapiserialize >=0.1.1
+    - r-rapiserialize >=0.1.4
     - r-rcpp
     - r-stringfish >=0.15.1
     - lz4-c
     - zstd
   run:
     - r-base
-    - r-rapiserialize >=0.1.1
+    - r-rapiserialize >=0.1.4
     - r-rcpp
     - r-stringfish >=0.15.1
 
